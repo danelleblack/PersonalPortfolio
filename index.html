@@ -1,200 +1,47 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" type="text/css" src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/personalport.css">
-    <link rel="mylogos" type="images" href="mylogos">
-  </head>
-    <body>
-
-        <div class="wrapper">
-
-          <div class="box1">
-            <img src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/mylogos/dark_logo_transparent_background.png" border="0" alt="logo"/>
-              <h1 class="myname">Danelle M Black</h1>
-						        <h4 class="skills">Front-end WannaBe</h4>
-            </div>
-
-            <div class="banner">
-                <img class="wire" src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/mylogos/banner.jpg">
-                <h1 class="featured-work">Featured Work</h1>
-            </div>
-
-            <div class="appify">
-              <img class="wire" src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/mylogos/appify.jpg">
-              <h2 class="title">Appify</h2>
-              <h5 class="url">https://github.com/Udacity/Appify</h5>
-            </div>
-
-              <div class="sunflower">
-                <img class="wire" src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/mylogos/sunflower.png">
-                <h2 class="title">Sunflower</h2>
-                <h5 class="url">https://github.com/Udacity/Sunflower</h5>
-              </div>
-
-              <div class="bokeh">
-                <img class="wire" src="/Users/danellem/Desktop/Portfolio/Personal Portfolio/mylogos/bokeh.jpg">
-                <h2 class="title">Bokeh</h2>
-                <h5 class="url">https://github.com/Udacity/Bokeh</h5>
-              </div>
-
-              <div class="footer"><a href="https://www.linkedin.com/in/danelle-black-2384b036/">Danelle Black | 2018 </a>
-              </div>
-
-              </div>
-      </body>
-  </html>
-  <style>
-  .wrapper
-  {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 100px;
-
-
-  }
-
-  .box1 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  img
-  {
-    display: inline-block;
-    height: 100%;
-    width: 20%;
-  }
-  .myname, .skills
-  {
-    display: inline-block;
-    width: 70%;
-    text-align: right;
-  position: absolute;
-  }
-  .myname
-  {
-  	font-family: sans-serif;
-  	font-weight: 100;
-  	color:#2d3c49;
-
-
-  }
-  h4
-  {
-    font-family: sans-serif;
-  	font-weight: 400;
-  	color:#2d3c49;
-    display: inline-block;
-    width: 70%;
-    text-align: right;
-  position: absolute;
-    margin-top: 80px;
-
-  }
-  .banner
-   {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 8;
-
-  }
-  .wire
-  {
-    width: 100%;
-    height: 80%;
-  }
-
-  .appify
-  { /*box2 is an exception to grid-template-columns: repeat(3, 1fr) rule*/
-  grid-column-start: 1; /*if dont specify -end browser assumes you end at -2*/
-  grid-row-start: 8; /*it's starting at 3 where box1 finished at finishes at 5*/
-  grid-row-end: 13;
-}
-.sunflower
-{ /*box2 is an exception to grid-template-columns: repeat(3, 1fr) rule*/
-  grid-column-start: 2; /*if dont specify -end browser assumes you end at -2*/
-  grid-row-start: 8; /*it's starting at 3 where box1 finished at finishes at 5*/
-  grid-row-end: 13;
-}
-.bokeh
-{ /*box2 is an exception to grid-template-columns: repeat(3, 1fr) rule*/
-  grid-column-start: 3; /*if dont specify -end browser assumes you end at -2*/
-  grid-row-start: 8; /*it's starting at 3 where box1 finished at finishes at 5*/
-  grid-row-end: 13;
-}
-.footer
-{ /*box1 is an exception to grid-template-columns: repeat(3, 1fr) rule*/
-  grid-column-start: 1; /*or grid-column: 1/4*/
-  grid-column-end: 4;
-  grid-row-start: 13;
-  grid-row-end: 14; /*occupying 2 rows - 200px*/
-}
-  * {box-sizing: border-box;}
-
-  .wrapper
-  {
-    /*border: 2px solid #f76707;
-    border-radius: 5px;
-    background-color: #fff4e6;*/
-  }
-
-  .wrapper > div
-  {
-    /*border: 2px solid #ffa94d;*/
-    border-radius: 5px;
-    background-color: white;
-    padding: 1em;
-    color: #d9480f;
-  }
-
-  .nested
-  {
-    border: 2px solid #ffec99;
-    border-radius: 5px;
-    background-color: #fff9db;
-    padding: 1em;
-  }
-  .title, .url, .footer
-  {
-    text-align: center;
-  }
-  .title
-  {
-    text-transform: uppercase;
-    color:#2d3c49;
-  }
-  .url
-  {
-    color:#2d3c49;
-  }
-  .featured-work
-  {
-    color:#7d97ad;
-    font: sans-serif;
-  }
-  @media (max-width: 740px)
-  {
-.wrapper
-{
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  display: flex;
-  align-content: flex-end;
-  grid-gap: 30px;
-}
-h1
-{
-  font-size: 50px;
-}
-}
-
-
-
-
-
-  </style>
+<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="utf-8">
+			<meta http-equiv="x-ua-compatible" content="ie-edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+				<title>Portfolio</title>
+					<link rel="stylesheet" type="text/css" href="app.css">
+			<meta class="foundation-mq">
+		</head>
+			<body>
+				<header class="header">
+					<div class="logo">
+						<img src href="http://s1076.photobucket.com/user/dmblack40/media/logo_transparent_background_zpsnonutlqh.png.html" target="_blank"><img src="http://i1076.photobucket.com/albums/w441/dmblack40/logo_transparent_background_zpsnonutlqh.png" border="0" alt=" photo logo_transparent_background_zpsnonutlqh.png" target=_blank>
+					</div>
+					<div class="portfolio_owner">
+						<h1 class="myname">Danelle M Black</h1>
+						<h4 class="skills">Front End Wanna-Be</h4>
+					</div>
+				</header>
+			<hr>
+				<span class="mainimage">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/2012-03-17_Dacrymyces_chrysospermus_Berk._%26_M.A._Curtis_206064.jpg">
+				</span>
+					<section class="content">
+						<div class="work">
+							<h2 class="work-title">Featured Work</h2>
+						<div class="wrapper"></div>
+						<div class="featured">
+							<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Valkenburg%2C_Halderpark%2C_feb2015-09.jpg" alt="image1" class="workpic">
+							<h3 class="name1">Appify</h3>
+						<p class="url">https://github.com/udacity/Appify/</p>
+					</div>
+					<div class="featured">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Valkenburg%2C_Halderpark%2C_feb2015-09.jpg" alt="image1" class="workpic">
+						<h3 class="name2">Sunflower</h3>
+						<p class="url">https://github.com/udacity/Sunflower/</p>
+					</div>
+					<div class="featured">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Ocean_City%2C_MD_Vol._Fire_Co._Station_%288317328004%29.jpg" alt="image3" class="workpic">
+						<h3 class="name2">Bokeh</h3>
+						<p class="url">https://github.com/udacity/Bokeh/</p>
+					</div>
+				</div>
+			</section>
+		</body>
+		</html>
